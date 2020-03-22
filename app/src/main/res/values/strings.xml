@@ -38,6 +38,8 @@
     <string name="per_country">Per Country Data</string>
     <string name="source">Source : %1$s</string>
 
+    <string name="country_indonesia">Indonesia</string>
+
     <string name="unpin">Unpin</string>
 
 </resources>
