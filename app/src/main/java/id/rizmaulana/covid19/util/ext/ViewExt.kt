@@ -5,7 +5,9 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import android.widget.EditText
+import androidx.annotation.StringRes
 import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.RecyclerView
 
 
 /**
@@ -43,4 +45,8 @@ fun View.gone() {
 
 fun Context.color(resource: Int): Int {
     return ContextCompat.getColor(this, resource)
+}
+
+fun RecyclerView.ViewHolder.getString(@StringRes string: Int): String {
+   return itemView.context.getString(string)
 }
